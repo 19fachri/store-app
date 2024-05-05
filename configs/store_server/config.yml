@@ -1,0 +1,17 @@
+platform:
+  env: "stage"
+  name: "store"
+  port: :8080
+  version: v0.1
+db:
+  host: localhost
+  user: "postgres"
+  password: "postgres"
+  port: 5432
+  schema: "store-local"
+  migrate_schema: false
+  migrate_data: false
+  debug: true
+auth:
+  secret_key: "Xcp5cN9F6dASkIQu4CdYSIGw0iBndAcZ"
+  token_expiry: 168 #hours
